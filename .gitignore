@@ -1,0 +1,19 @@
+# Data artifacts are reproducible from EDGAR; never commit them.
+data/
+*.duckdb
+*.duckdb.wal
+*.parquet
+*.ndjson
+
+# Secrets
+.env
+.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/

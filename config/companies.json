@@ -1,0 +1,15 @@
+{
+  "_comment": "Companies tracked by the warehouse. Kept small on purpose: the pipeline is the point, not the coverage. Add a ticker and re-run `python -m mdw all`. Note: a ticker maps to whatever CIK EDGAR currently lists, and corporate actions can change that (XOM moved to a new CIK in 2025 with no filing history yet; the coverage test caught it).",
+  "tickers": [
+    "AAPL",
+    "MSFT",
+    "NVDA",
+    "JPM",
+    "KO",
+    "COST",
+    "PFE",
+    "JNJ"
+  ],
+  "taxonomy": "us-gaap",
+  "unit": "USD"
+}
