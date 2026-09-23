@@ -4,7 +4,7 @@ SEC EDGAR fundamentals → DuckDB, with layered SQL models, point-in-time
 correctness, and data-quality assertions. Python 3.11+, two dependencies,
 runs end to end in about ten seconds.
 
-[![ci](https://github.com/david-rodriguez-dev/market-data-warehouse/actions/workflows/ci.yml/badge.svg)](https://github.com/david-rodriguez-dev/market-data-warehouse/actions/workflows/ci.yml)
+[![ci](https://github.com/davrod-dev/market-data-warehouse/actions/workflows/ci.yml/badge.svg)](https://github.com/davrod-dev/market-data-warehouse/actions/workflows/ci.yml)
 
 **What it does**
 
@@ -21,7 +21,7 @@ runs end to end in about ten seconds.
 ## Quickstart
 
 ```bash
-git clone https://github.com/david-rodriguez-dev/market-data-warehouse
+git clone https://github.com/davrod-dev/market-data-warehouse
 cd market-data-warehouse
 pip install -e ".[dev]"
 
@@ -239,4 +239,4 @@ before pointing this at more than a handful of filers.
 
 ---
 
-David Rodriguez · [github.com/david-rodriguez-dev](https://github.com/david-rodriguez-dev)
+David Rodriguez · [github.com/davrod-dev](https://github.com/davrod-dev)
