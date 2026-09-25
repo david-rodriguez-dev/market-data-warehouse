@@ -1,2 +1,5 @@
 # Normalise line endings so the repo is identical on Windows and the Linux CI runner.
 * text=auto eol=lf
+# GitHub Linguist classifies SQL as "data" and leaves it out of the language
+# statistics by default. This repository is SQL-first; count it.
+*.sql linguist-detectable=true
