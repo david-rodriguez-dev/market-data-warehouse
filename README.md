@@ -15,7 +15,7 @@ runs end to end in about ten seconds.
   none of its dependencies.
 - Keeps **every revision of every fact**. "Latest known" and "as known on
   date X" are explicit queries, not something an ingest script decided.
-- Guards the result with 13 SQL assertions and 17 offline tests that drive
+- Guards the result with 13 SQL assertions and 20 offline tests that drive
   the whole pipeline through a synthetic filing in CI.
 
 ## Quickstart
@@ -26,6 +26,7 @@ cd market-data-warehouse
 pip install -e ".[dev]"
 
 # SEC requires a User-Agent that identifies you. There is no default on purpose.
+# (And not one containing "github": SEC's bot filter answers 403 to that, disguised as a rate limit.)
 export EDGAR_USER_AGENT="market-data-warehouse you@example.com"   # PowerShell: $env:EDGAR_USER_AGENT = "..."
 
 python -m mdw all        # ingest → build → test → report

@@ -45,6 +45,12 @@ def user_agent() -> str:
             f"  set {USER_AGENT_ENV}=market-data-warehouse you@example.com\n"
             f"The address must be present: EDGAR returns 403 without one."
         )
+    if "github" in value.lower():
+        raise ConfigError(
+            f"{USER_AGENT_ENV} contains 'github'. SEC's bot filter answers 403 to any User-Agent with "
+            f"that substring while showing its rate-limit page, so an address such as "
+            f"name.github@example.com cannot be used here."
+        )
     return value
 
 
